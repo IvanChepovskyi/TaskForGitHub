@@ -1,7 +1,11 @@
 function Dikhotomia
 D(-10,10,0.0001)
+x=-10:1:10;
+y=f(x);
+figure(1)
+plot(x,y)
 function y=f(x)
-y=(x+1)^2;
+y=(x+1).^2;
 end
 function y=D(a,b,eps)
 if (round(abs(b-a)*10000)/10000>eps)
